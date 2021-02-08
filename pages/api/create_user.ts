@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { runMiddleware, cors } from "./cors";
+import { runMiddleware, cors } from "../../lib/cors";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   await runMiddleware(req, res, cors);
